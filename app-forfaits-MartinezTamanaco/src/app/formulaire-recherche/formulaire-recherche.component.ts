@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Formulaire } from '../formulaire';
+import { ForfaitService } from '../forfait.service';
 
 @Component({
   selector: 'app-formulaire-recherche',
@@ -15,7 +16,7 @@ export class FormulaireRechercheComponent implements OnInit {
     @Output() formulaireChange = new EventEmitter();
     showFiller = false;
    
-  constructor() { }
+  constructor( private forfaitService: ForfaitService) { }
 
   ngOnInit(): void {
   }

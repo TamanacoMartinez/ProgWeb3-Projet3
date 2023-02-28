@@ -53,3 +53,11 @@ b {
     .ml-auto {
     margin-left: auto;
     }
+
+    .td{
+      min-width: 100px;
+    }
+
+    .td-actions{
+      width: 100px;  
+    }

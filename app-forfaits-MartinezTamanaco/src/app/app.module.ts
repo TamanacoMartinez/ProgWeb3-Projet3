@@ -48,7 +48,6 @@ import { FormulaireForfaitComponent } from './formulaire-forfait/formulaire-forf
 import { EnteteComponent } from './entete/entete.component';
 import { AProposComponent } from './a-propos/a-propos.component';
 import { PiedPageComponent } from './pied-page/pied-page.component';
-import { AccueilComponent } from './accueil/accueil.component';
 import { Graphique1Component } from './graphique1/graphique1.component';
 import { Graphique2Component } from './graphique2/graphique2.component';
 import { GraphiquesComponent } from './graphiques/graphiques.component';
@@ -72,7 +71,6 @@ import { ForfaitsYComponent } from './forfaits-y/forfaits-y.component';
     EnteteComponent,
     AProposComponent,
     PiedPageComponent,
-    AccueilComponent,
     Graphique1Component,
     Graphique2Component,
     GraphiquesComponent,

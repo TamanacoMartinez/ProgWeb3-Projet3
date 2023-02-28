@@ -3,28 +3,22 @@
         <form action="">
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Nom du forfait</mat-label>
-                <input matInput placeholder="Nom du forfait" value="nom" maxlength="30" required
+                <input matInput placeholder="Nom du forfait" name="nom" maxlength="30" required
                  (ngModel)="formulaire.nom">
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Code</mat-label>
-                <input matInput placeholder="Code" value="code" minlength="6" maxlength="6" required
+                <input matInput placeholder="Code" name="code" minlength="6" maxlength="6" required
                  (ngModel)="formulaire.code">
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Prix</mat-label>
-                <input matInput placeholder="Prix" value="prix" maxlength="7" required
+                <input matInput placeholder="Prix" name="prix" maxlength="7" required
                  (ngModel)="formulaire.prix">
               </mat-form-field>
         </form>
-       
-      <!-- <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button> -->
     </mat-drawer>
   
     <div class="example-sidenav-content">

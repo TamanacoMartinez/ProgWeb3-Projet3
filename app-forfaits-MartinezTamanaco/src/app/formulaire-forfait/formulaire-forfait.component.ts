@@ -16,20 +16,6 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class FormulaireForfaitComponent implements OnInit {
   @Output() forfaitAjoute = new EventEmitter();
 
-  //  newForfait: Forfait = {nom: 'Forfait numéro 1', description: 'Description du forfait numéro 1', code: 'ABC000', categories:[], 
-  //  etablissement:{
-  //   coordonnees:{
-  //     adresse:'1233, av des Gouverneurs.', 
-  //     courriel: 'tamanacomb@gmail.com',
-  //     site_web: 'tamanaco.martinez.com', 
-  //     telephone: '418-922-5385',
-  //     ville: 'Québec'
-  //   },
-  //   description_etablissement: 'Lorem Ipsum...',
-  //   nom_etablissement: 'Hotel Pur'
-  //  }, 
-  //  date_debut: '', date_fin: '', prix: 0, nouveau_prix: 0, premium: false, avis:[]};
-   
 
    forfait: Forfait = {id: 0, nom: 'Forfait numéro 1', description: 'Description du forfait numéro 1', code: 'ABC000', categories:[], 
    etablissement:{
@@ -43,7 +29,7 @@ export class FormulaireForfaitComponent implements OnInit {
     description_etablissement: 'Lorem Ipsum...',
     nom_etablissement: 'Hotel Pur'
    }, 
-   date_debut: '2022-11-09', date_fin: '2022-11-15', prix: 0, nouveau_prix: 0, premium: false, avis:[]};
+   date_debut: '2022-11-09', date_fin: '2022-11-15', prix: 1, nouveau_prix: 0, premium: false, avis:[]};
 
 
   
@@ -65,7 +51,7 @@ export class FormulaireForfaitComponent implements OnInit {
     _ => {
     forfaitFormAjout.resetForm();
     // this.forfaitAjoute.emit(); 
-    this.dialogRef.close(); }
+    this.dialogRef.close("Forfait ajouté !"); }
       );
     }
   }
@@ -77,7 +63,7 @@ export class FormulaireForfaitComponent implements OnInit {
     _ => {
     forfaitFormAjout.resetForm();
     // this.forfaitAjoute.emit(); 
-    this.dialogRef.close(); }
+    this.dialogRef.close("Forfait modifié !"); }
       );
     }
   }

@@ -8,15 +8,15 @@ import { FormulaireRechercheComponent } from './formulaire-recherche/formulaire-
 import { ListeForfaitsComponent } from './liste-forfaits/liste-forfaits.component';
 import { PetitForfaitComponent } from './petit-forfait/petit-forfait.component';
 import { ForfaitCompletComponent } from './forfait-complet/forfait-complet.component';
-import { AccueilComponent } from './accueil/accueil.component';
 import { GraphiquesComponent } from './graphiques/graphiques.component';
 import { ForfaitsXComponent } from './forfaits-x/forfaits-x.component';
 import { ForfaitsYComponent } from './forfaits-y/forfaits-y.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/liste-produits', pathMatch: 'full' },
-  { path: 'accueil', component: AccueilComponent },
+  // { path: '', redirectTo: '/liste-produits', pathMatch: 'full' },
+  { path: '', component: ListeForfaitsComponent },
+  { path: 'accueil', component: ListeForfaitsComponent },
   { path: 'formulaire-recherche', component: FormulaireRechercheComponent },
   { path: 'forfaits-x', component: ForfaitsXComponent },
   { path: 'forfaits-y', component: ForfaitsYComponent },
